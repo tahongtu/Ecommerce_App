@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Checkout_Success_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobarchat"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/AppTheme">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left">
+            <ImageButton
+                android:id="@+id/backc"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:layout_height="wrap_content"/>
+
+
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/ln_noitem"
+        android:padding="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:gravity="center"
+            android:id="@+id/sc"
+            android:src="@drawable/ic_checkout_cs"
+            android:layout_width="match_parent"
+            android:background="#00FFFFFF"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:id="@+id/tv_nocart"
+            android:textColor="#FF5722"
+            android:gravity="center"
+            android:text="Thanh Toán Thành công !"/>
+        <TextView
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:textColor="#C95A5756"
+            android:gravity="center"
+            android:text="Đơn hàng sẽ đươc xử lý và gửi đến bạn \n trong thơi gian nhanh nhất có thể "/>
+
+
+    </LinearLayout>
+</RelativeLayout>

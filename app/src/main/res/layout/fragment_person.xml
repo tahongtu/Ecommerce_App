@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.PersonFragment">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:background="#009688"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/bgUser"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/bg_img"
+        android:scaleType="fitXY"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="150dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user_img" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/linearUser"
+        android:layout_below="@+id/bgUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4">
+            <TextView
+                android:textSize="16sp"
+                android:fontFamily="@font/amethysta"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Tên"
+                android:layout_weight="1"
+                android:gravity="left"/>
+            <TextView
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/amethysta"
+                android:id="@+id/tenuser"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Ta Hong Tu"
+                android:layout_weight="3"
+                android:gravity="left"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4">
+            <TextView
+                android:textSize="16sp"
+                android:fontFamily="@font/amethysta"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh"
+                android:layout_weight="1"
+                android:gravity="left"/>
+            <TextView
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/amethysta"
+                android:id="@+id/bduser"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="31/03/2001"
+                android:layout_weight="3"
+                android:gravity="left"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4">
+            <TextView
+                android:textSize="16sp"
+                android:fontFamily="@font/amethysta"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Giới tính"
+                android:layout_weight="1"
+                android:gravity="left"/>
+            <TextView
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/amethysta"
+                android:id="@+id/sexUser"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:layout_weight="3"
+                android:gravity="left"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4">
+            <TextView
+                android:textSize="16sp"
+                android:fontFamily="@font/amethysta"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Gmail"
+                android:layout_weight="1"
+                android:gravity="left"/>
+            <TextView
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/amethysta"
+                android:id="@+id/gmailUser"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="abcd@gmail.com"
+                android:layout_weight="3"
+                android:gravity="left"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4">
+            <TextView
+                android:textSize="16sp"
+                android:fontFamily="@font/amethysta"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại"
+                android:layout_weight="1"
+                android:gravity="left"/>
+            <TextView
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/amethysta"
+                android:id="@+id/phoneUser"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="0123456789"
+                android:layout_weight="3"
+                android:gravity="left"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:backgroundTint="@color/pink"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/amethysta"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linearUser"
+        android:gravity="center"
+        android:text="Chỉnh sửa"/>
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/amethysta"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnUpdate"
+        android:gravity="center"
+        android:text="Đăng xuất"/>
+
+
+
+</RelativeLayout>

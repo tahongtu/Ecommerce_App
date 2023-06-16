@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UpdateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:background="#009688"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:layout_centerVertical="true"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"/>
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txtupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa thông tin cá nhân"
+        android:layout_below="@id/toolbar"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amethysta"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/linearUpdate"
+        android:layout_below="@+id/txtupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="6">
+            <TextView
+                android:textSize="18sp"
+                android:fontFamily="@font/amethysta"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Tên"
+                android:layout_weight="2"
+                android:gravity="left"/>
+            <EditText
+                android:text="Ta Hong Tu"
+                android:layout_weight="4"
+                android:id="@+id/tenUpdate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:elevation="3dp"
+                android:padding="15dp"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="6">
+            <TextView
+                android:textSize="18sp"
+                android:fontFamily="@font/amethysta"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh"
+                android:layout_weight="2"
+                android:gravity="left"/>
+            <EditText
+                android:text="31/03/2001"
+                android:layout_weight="4"
+                android:id="@+id/bdUpdate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:elevation="3dp"
+                android:padding="15dp"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="6">
+            <TextView
+                android:textSize="18sp"
+                android:fontFamily="@font/amethysta"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Giới tính"
+                android:layout_weight="2"
+                android:gravity="left"/>
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/namcheck"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:textSize="18sp"/>
+                <RadioButton
+                    android:id="@+id/nucheck"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:textSize="18sp"/>
+
+            </RadioGroup>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="6">
+            <TextView
+                android:textSize="18sp"
+                android:fontFamily="@font/amethysta"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Gmail"
+                android:layout_weight="2"
+                android:gravity="left"/>
+            <EditText
+                android:text="abcd@mgail.com"
+                android:layout_weight="4"
+                android:id="@+id/gmailUpdate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:elevation="3dp"
+                android:padding="15dp"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="6">
+            <TextView
+                android:textSize="18sp"
+                android:fontFamily="@font/amethysta"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Số phone"
+                android:layout_weight="2"
+                android:gravity="left"/>
+            <EditText
+                android:text="0123456789"
+                android:layout_weight="4"
+                android:id="@+id/sdtUpdate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:elevation="3dp"
+                android:padding="15dp"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOke"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/amethysta"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linearUpdate"
+        android:gravity="center"
+        android:text="Cập nhật"/>
+
+
+
+
+</RelativeLayout>
